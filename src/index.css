@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-fredoka {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-caveat {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Custom wooden table texture background */
+.wood-texture {
+  background-color: #8c532b;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255, 230, 180, 0.08) 0%, transparent 60%),
+    repeating-radial-gradient(circle at 30% 40%, rgba(60, 30, 10, 0.06) 0, rgba(60, 30, 10, 0.06) 12px, transparent 13px, transparent 24px);
+}
+
+.flour-bench {
+  background-color: #f7ede2;
+  background-image: 
+    radial-gradient(#e0cfb8 1px, transparent 1px),
+    radial-gradient(#eedbc5 1px, #f7ede2 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+@keyframes rollMotion {
+  0% { transform: translateY(-40px) rotate(-3deg); }
+  50% { transform: translateY(40px) rotate(3deg); }
+  100% { transform: translateY(-40px) rotate(-3deg); }
+}
+
+.animate-roll {
+  animation: rollMotion 1.4s ease-in-out infinite;
+}
+
+@keyframes puffFade {
+  0% { transform: scale(0.6); opacity: 0.9; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.animate-puff {
+  animation: puffFade 0.7s ease-out forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 130, 90, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 130, 90, 0.8);
+}

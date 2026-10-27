@@ -1,0 +1,6 @@
+{
+  "name": "Merve Hanım'ın Yufka Şenliği",
+  "description": "7. Sınıf matematik dairenin alanı (A = πr², π = 3) konusu için etkileşimli, eğlenceli ve geleneksel yufka açma oyunu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
